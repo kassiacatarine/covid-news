@@ -43,3 +43,10 @@ body {
 }
 
 /* PRESENTATION */
+
+/* CAUTIONS */
+
+.caution-item {
+  width: 180px;
+  height: 180px;
+}
