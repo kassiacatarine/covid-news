@@ -4,7 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notícias do COVID-19 | Sobre</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <div class="logo">
+      <div id="logocontainer" onclick="fill()">
+        <div id="pelogo">CN</div>
+      </div>
+      <button id="burger" class="open-main-nav">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li>
+            <a href="index.html" class="menu-item">
+              <img
+                class="menu-icon"
+                src="assets/images/icons/home.svg"
+                alt="Home"
+              />
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="menu-item">
+              <img
+                class="menu-icon"
+                src="assets/images/icons/about.svg"
+                alt="Sobre"
+              />
+              <span>Sobre</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="menu-item">
+              <img
+                class="menu-icon"
+                src="assets/images/icons/contact.svg"
+                alt="Contato"
+              />
+              <span>Contato</span>
+            </a>
+          </li>
+          <li>
+            <a href="more.html" class="menu-item">
+              <img
+                class="menu-icon"
+                src="assets/images/icons/more.svg"
+                alt="Saiba Mais"
+              />
+              <span>Saiba Mais</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="card-profile">
+      <img
+        class="photo"
+        src="https://avatars2.githubusercontent.com/u/20980854?s=400&u=20c264f2ec62afacf12b9a146986da9fb72500d9&v=4"
+        alt="Foto de Perfil da Kássia"
+      />
+      <div class="links">
+        <a
+          href="https://github.com/kassiacatarine"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/icons/github.svg" alt="Github" />
+        </a>
+        <a
+          href="http://linkedin.com/in/kassialopes/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/icons/linkedin.svg" alt="Linkedin" />
+        </a>
+      </div>
+      <div class="about">
+        <p>
+          Sou Desenvolvedora Full Stack Dotnet e Angular, mas sempre tentando me
+          aventurar em outras linguagens. Até o momento é dificil dizer o que eu
+          prefiro fazer de programação, acho que sempre pode ter algo novo que
+          me empolgue mais. Nunca sabemos o que está por vim certo!?
+        </p>
+        <p>
+          Participei de Hackatons, onde inclusive já estive em uma das equipes
+          ganhadoras, reuni aprendizado e cheguei aqui. Muito dificil dizer se
+          estou quase no fim, mas acredito que ainda tem muito pela frente.
+        </p>
+        <p>
+          No momento atual, estou desenvolvendo alguns projetos pessoais e em
+          meio tempo me terminando o meu trabalho de conclusão de curso da minha
+          faculdade.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
