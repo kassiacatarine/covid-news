@@ -4,114 +4,351 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notícias do COVID-19</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <div class="menu-mobile flex wrap">
-      <div class="bar">
-        <img
-          class="bar-icon"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAw%0D%0AL3N2ZyI+CgogPGc+CiAgPHRpdGxlPmJhY2tncm91bmQ8L3RpdGxlPgogIDxyZWN0IGZpbGw9Im5v%0D%0AbmUiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0MDIiIHdpZHRoPSI1ODIiIHk9Ii0x%0D%0AIiB4PSItMSIvPgogPC9nPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGlk%0D%0APSJzdmdfMSIgZmlsbD0ibm9uZSIgZD0ibTAsMGw0OCwwbDAsNDhsLTQ4LDBsMCwtNDh6Ii8+CiAg%0D%0APHBhdGggZmlsbD0iI2ZmZmZmZiIgaWQ9InN2Z18yIiBkPSJtMzgsMTRsMCw4bC0yNi4zNCwwbDcu%0D%0AMTcsLTcuMTdsLTIuODMsLTIuODNsLTEyLDEybDEyLDEybDIuODMsLTIuODNsLTcuMTcsLTcuMTds%0D%0AMzAuMzQsMGwwLC0xMmwtNCwweiIvPgogPC9nPgo8L3N2Zz4="
-          alt="Voltar"
-        />
-        <img
-          class="bar-icon"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAw%0D%0AL3N2ZyI+CgogPGc+CiAgPHRpdGxlPmJhY2tncm91bmQ8L3RpdGxlPgogIDxyZWN0IGZpbGw9Im5v%0D%0AbmUiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0MDIiIHdpZHRoPSI1ODIiIHk9Ii0x%0D%0AIiB4PSItMSIvPgogPC9nPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGlk%0D%0APSJzdmdfMSIgZmlsbD0ibm9uZSIgZD0ibTAsMGw0OCwwbDAsNDhsLTQ4LDBsMCwtNDh6Ii8+CiAg%0D%0APHBhdGggZmlsbD0iI2ZmZmZmZiIgaWQ9InN2Z18yIiBkPSJtMjQsMTZjMi4yMSwwIDQsLTEuNzkg%0D%0ANCwtNHMtMS43OSwtNCAtNCwtNHMtNCwxLjc5IC00LDRzMS43OSw0IDQsNHptMCw0Yy0yLjIxLDAg%0D%0ALTQsMS43OSAtNCw0czEuNzksNCA0LDRzNCwtMS43OSA0LC00cy0xLjc5LC00IC00LC00em0wLDEy%0D%0AYy0yLjIxLDAgLTQsMS43OSAtNCw0czEuNzksNCA0LDRzNCwtMS43OSA0LC00cy0xLjc5LC00IC00%0D%0ALC00eiIvPgogPC9nPgo8L3N2Zz4="
-          alt="Menu"
-        />
+    <!-- HEADER -->
+    <div class="logo">
+      <div id="logocontainer" onclick="fill()">
+        <div id="pelogo">CN</div>
       </div>
-      <a href="index.html" class="menu-item is-active">
-        <img
-          class="menu-icon"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAw%0D%0AL3N2ZyI+CgogPGc+CiAgPHRpdGxlPmJhY2tncm91bmQ8L3RpdGxlPgogIDxyZWN0IGZpbGw9Im5v%0D%0AbmUiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0MDIiIHdpZHRoPSI1ODIiIHk9Ii0x%0D%0AIiB4PSItMSIvPgogPC9nPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGZp%0D%0AbGw9IiNmZmZmZmYiIGlkPSJzdmdfMSIgZD0ibTIwLDQwbDAsLTEybDgsMGwwLDEybDEwLDBsMCwt%0D%0AMTZsNiwwbC0yMCwtMThsLTIwLDE4bDYsMGwwLDE2bDEwLDB6Ii8+CiA8L2c+Cjwvc3ZnPg=="
-          alt="Home"
-        />
-        <span class="content">Home</span>
-      </a>
-      <a href="about.html" class="menu-item">
-        <img class="menu-icon" src="images/icons/about.svg" alt="Sobre" />
-        <span>Sobre</span>
-      </a>
-      <a href="contact.html" class="menu-item">
-        <img class="menu-icon" src="images/icons/contact.svg" alt="Contato" />
-        <span>Contato</span>
-      </a>
-      <a href="more.html" class="menu-item">
-        <img class="menu-icon" src="images/icons/more.svg" alt="Saiba Mais" />
-        <span>Saiba Mais</span>
-      </a>
-    </div>
-    <!-- <div class="header flex space-between">
-      <div class="logo">Covid-19 News</div>
-      <div class="menu-header flex">
-        <div class="menu-item">
-          Home
-        </div>
-        <div class="menu-item">
-          Sobre
-        </div>
-        <div class="menu-item">
-          Contato
-        </div>
-        <div class="menu-item">
-          Saiba Mais
-        </div>
-      </div>
-    </div>
-    <div class="container presentation flex space-around">
-      <div class="information column">
-        <h1 class="title">Titulo</h1>
-        <h2 class="subtitle">As notícias mais relevântes sobre o COVID-19</h2>
-      </div>
-      <div class="menu-presentation">
+      <button id="burger" class="open-main-nav">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+      </button>
+      <nav class="main-nav" id="main-nav">
         <ul>
-          <li class="menu-item">
-            <a href="#">Home</a>
+          <li>
+            <a href="index.html" class="menu-item">
+              <img class="menu-icon" src="assets/images/icons/home.svg" alt="Sobre" />
+              <span>Home</span>
+            </a>
           </li>
-          <li class="menu-item">
-            <a href="#">Sobre</a>
+          <li>
+            <a href="about.html" class="menu-item">
+              <img class="menu-icon" src="assets/images/icons/about.svg" alt="Sobre" />
+              <span>Sobre</span>
+            </a>
           </li>
-          <li class="menu-item">
-            <a href="#">Contato</a>
+          <li>
+            <a href="contact.html" class="menu-item">
+              <img
+                class="menu-icon"
+                src="assets/images/icons/contact.svg"
+                alt="Contato"
+              />
+              <span>Contato</span>
+            </a>
           </li>
-          <li class="menu-item">
-            <a href="#">Saiba <aos</a>
+          <li>
+            <a href="more.html" class="menu-item">
+              <img
+                class="menu-icon"
+                src="assets/images/icons/more.svg"
+                alt="Saiba Mais"
+              />
+              <span>Saiba Mais</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="blog-container">
+        <div class="blog-header">
+          <div class="blog-cover-1"></div>
+        </div>
+
+        <div class="blog-body">
+          <div class="blog-title">
+            <h1>
+              <a
+                target="_blank"
+                href="https://g1.globo.com/politica/noticia/2020/04/19/manifestantes-fazem-carreata-em-brasilia-em-apoio-a-bolsonaro.ghtml"
+                >Cidades registram carreata em defesa de Bolsonaro neste
+                domingo</a
+              >
+            </h1>
+          </div>
+          <div class="blog-summary">
+            <p>
+              Manifestantes fizeram neste domingo (19) carretas em apoio ao
+              presidente Jair Bolsonaro (sem partido), contra as medidas de
+              isolamento social impostas por prefeitos e governadores e
+              defendidas por autoridades de saúde para evitar a disseminação da
+              Covid-19. Também pediram intervenção militar, o que contraria a
+              Constituição.
+            </p>
+            <p>
+              Foram registrados atos em Brasília, São Paulo, Belo Horizonte,
+              Fortaleza, Maceió, Goiânia, Salvador, Manaus, Goiânia e Recife,
+              além de cidades do interior do Rio e de São Paulo.
+            </p>
+          </div>
+        </div>
+
+        <div class="blog-footer">
+          <ul>
+            <li class="published-date">19/04/2020</li>
+            <li class="more">
+              <a
+                target="_blank"
+                href="https://g1.globo.com/politica/noticia/2020/04/19/manifestantes-fazem-carreata-em-brasilia-em-apoio-a-bolsonaro.ghtml"
+              >
+                Saiba Mais</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blog-container">
+        <div class="blog-header">
+          <div class="blog-cover-2"></div>
+        </div>
+
+        <div class="blog-body">
+          <div class="blog-title">
+            <h1>
+              <a
+                target="_blank"
+                href="https://noticias.r7.com/saude/brasil-tem-2462-mortes-e-38654-casos-confirmados-de-covid-19-19042020"
+                >Brasil tem 2.462 mortes e 38.654 casos confirmados de
+                covid-19</a
+              >
+            </h1>
+          </div>
+          <div class="blog-summary">
+            <p>
+              O Brasil acumula 2.462 mortes e 38.654 casos confirmados de
+              covid-19 desde o primeiro registro da doença no país, em 26 de
+              fevereiro. As informações foram divulgadas pelo Ministério da
+              Saúde, neste domingo (19), por meio do painel digital criado pela
+              Pasta.
+            </p>
+            <p>
+              Foram atestados 110 novos óbitos pela infecção provocada pelo novo
+              coronavírus só nas últimas 24 horas —menor índice dos últimos
+              quatro dias—, sendo que o número de contaminados apresentou
+              acréscimo de 2.055.
+            </p>
+          </div>
+        </div>
+
+        <div class="blog-footer">
+          <ul>
+            <li class="published-date">19/04/2020</li>
+            <li class="more">
+              <a
+                target="_blank"
+                href="https://noticias.r7.com/saude/brasil-tem-2462-mortes-e-38654-casos-confirmados-de-covid-19-19042020"
+              >
+                Saiba Mais</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blog-container">
+        <div class="blog-header"></div>
+
+        <div class="blog-body">
+          <div class="blog-title">
+            <h1>
+              <a
+                target="_blank"
+                href="https://www.agenciadoradio.com.br/noticias/confederacao-nacional-de-municipios-lanca-campanha-para-incentivar-remarcacoes-de-viagens-e-eventos-pran208607"
+                >Confederação Nacional de Municípios lança campanha para
+                incentivar remarcações de viagens e eventos</a
+              >
+            </h1>
+          </div>
+          <div class="blog-summary">
+            <audio
+              controls=""
+              controlslist="noplay nopause nodownload"
+              data-id="17730"
+              data-trigger="true"
+              preload="none"
+              style="display: block;"
+            >
+              <source src="/assets/audio/news-2.mp3" type="audio/ogg" />
+              <source src="/assets/audio/news-2.mp3" type="audio/mpeg" />
+            </audio>
+            <p>
+              Por esse motivo, a Confederação Nacional de Municípios (CNM)
+              lançou uma campanha para engajar prefeitos, empresários e
+              entidades sobre a importância de conscientizar a população a
+              valorizar o turismo nacional, assim que as atividades voltarem à
+              normalidade.
+            </p>
+            <p>
+              A campanha, denominada “Municípios juntos pelo Turismo”, inclui um
+              plano estratégico direcionado ao lazer e aos eventos. O objetivo
+              da CNM é orientar os prefeitos para que preparem estruturas e
+              planos para a retomada de visitas turísticas em breve.
+            </p>
+            <p>
+              Na avaliação da entidade, o gestor que definir bem as ações
+              antecipadamente conseguirá superar a crise atual com mais
+              facilidade. A campanha prevê ainda o incentivo para que turistas e
+              empresas remarquem viagens e solenidades agendadas antes do
+              surgimento do novo coronavírus.
+            </p>
+          </div>
+        </div>
+
+        <div class="blog-footer">
+          <ul>
+            <li class="published-date">19/04/2020</li>
+            <li class="more">
+              <a
+                target="_blank"
+                href="https://www.agenciadoradio.com.br/noticias/confederacao-nacional-de-municipios-lanca-campanha-para-incentivar-remarcacoes-de-viagens-e-eventos-pran208607"
+              >
+                Saiba Mais</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blog-container">
+        <div class="blog-header"></div>
+
+        <div class="blog-body">
+          <div class="blog-title">
+            <h1>
+              <a
+                target="_blank"
+                href="https://www.agenciadoradio.com.br/noticias/para-combater-desinformacao-facebook-vai-contra-atacar-usuarios-que-curtirem-noticias-falsas-sobre-covid-19-pran208611"
+                >Para combater desinformação, Facebook vai "contra-atacar"
+                usuários que curtirem notícias falsas sobre covid-19</a
+              >
+            </h1>
+          </div>
+          <div class="blog-summary">
+            <audio
+              controls=""
+              controlslist="noplay nopause nodownload"
+              data-id="17730"
+              data-trigger="true"
+              preload="none"
+              style="display: block;"
+            >
+              <source src="/assets/audio/news-3.mp3" type="audio/ogg" />
+              <source src="/assets/audio/news-3.mp3" type="audio/mpeg" />
+            </audio>
+            <p>
+              As famosas “fake news” já não são novidade e potencializam a
+              desinformação nas redes sociais em tempos de pandemia. Por esse
+              motivo, o Facebook anunciou que vai adicionar publicações
+              devidamente verificadas no feed de notícias de quem curtir
+              notícias falsas.
+            </p>
+            <p>
+              O objetivo é tentar conter a disseminação de informações
+              mentirosas sobre o novo coronavírus, que preocupam autoridades de
+              todo o mundo. A pessoa que reagir ou comentar em um post com fake
+              news receberá um box, direcionando o usuário para o site da
+              Organização Mundial da Saúde (OMS).
+            </p>
+            <p>
+              Outra atualização vai mostrar uma seção de notícias com respaldo
+              jornalístico e que contenham informações verdadeiras a respeito do
+              coronavírus.
+            </p>
+          </div>
+        </div>
+
+        <div class="blog-footer">
+          <ul>
+            <li class="published-date">19/04/2020</li>
+            <li class="more">
+              <a
+                target="_blank"
+                href="https://www.agenciadoradio.com.br/noticias/para-combater-desinformacao-facebook-vai-contra-atacar-usuarios-que-curtirem-noticias-falsas-sobre-covid-19-pran208611"
+              >
+                Saiba Mais</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="blog-container">
+        <div class="blog-header"></div>
+
+        <div class="blog-body">
+          <div class="blog-title">
+            <h1>
+              <a target="_blank" href="https://youtu.be/rPU28Sa9OJw"
+                >Live - Distanciamento social: até quando?</a
+              >
+            </h1>
+          </div>
+          <div class="blog-summary">
+            <p>
+              Atila Iamarino Doutor em Microbiologia fala sobre a situação atual
+              enfrentada e como lidar para que não se corra o risco de pegar o
+              Covid-19.
+            </p>
+          </div>
+        </div>
+        <iframe
+          width="560" height="315"
+          src="https://www.youtube.com/embed/rPU28Sa9OJw"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <div class="blog-footer">
+          <ul>
+            <li class="published-date">18/03/2020</li>
+            <li class="more">
+              <a target="_blank" href="https://youtu.be/rPU28Sa9OJw">
+                Saiba Mais</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-container">
+      <div class="blog-header"></div>
+
+      <div class="blog-body">
+        <div class="blog-title">
+          <h1>
+            <a target="_blank" href="https://youtu.be/mn7qUlmbzdM"
+              >Coronavírus: Nova Zelândia aposta em estratégia agressiva contra covid-19</a
+            >
+          </h1>
+        </div>
+        <div class="blog-summary">
+          <p>
+            Neste vídeo, a repórter Laís Alegretti explica como a Nova Zelândia vem obtendo sucesso com medidas firmes contra o coronavírus, incluindo isolamento para todos. Lá, casos da covid-19 parecem estar em queda livre - resta esperar para saber se essa estratégia se provará mesmo um sucesso.
+          </p>
+        </div>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mn7qUlmbzdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="blog-footer">
+        <ul>
+          <li class="published-date">15/03/2020</li>
+          <li class="more">
+            <a target="_blank" href="https://youtu.be/mn7qUlmbzdM">
+              Saiba Mais</a
+            >
           </li>
         </ul>
       </div>
     </div>
-    <div class="container cautions flex">
-      <div class="caution-item">1</div>
-      <div class="caution-item">2</div>
-      <div class="caution-item">3</div>
-      <div class="caution-item">4</div>
-      <div class="caution-item">5</div>
-      <div class="caution-item">6</div>
-    </div>
-    <div class="container news flex">
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY"
-      >
-      </iframe>
-      <div class="news-container">
-        <h3 class="news-title">Titulo da Noticia</h3>
-        <p class="news-description">
-          Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um
-          texto randômico. Com mais de 2000 anos, suas raízes podem ser
-          encontradas em uma obra de literatura latina clássica datada de 45 AC.
-          Richard McClintock, um professor de latim do Hampden-Sydney College na
-          Virginia, pesquisou uma das mais obscuras palavras em latim,
-          consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por
-          entre citações da palavra na literatura clássica, descobriu a sua
-          indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do
-          "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de
-          Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética
-          muito popular na época da Renascença. A primeira linha de Lorem Ipsum,
-          "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.
-        </p>
-      </div>
-    </div> -->
+  </div>
+
+
+    <script src="js/home.js"></script>
   </body>
 </html>
