@@ -9,32 +9,12 @@ body {
   background: #f0edfd;
 }
 
-.container {
-  margin: 0 8%;
-}
-
-.flex {
-  display: flex;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-.row {
-  flex-direction: row;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.space-around {
-  justify-content: space-around;
+.title-site {
+  font-weight: 800;
+  font-family: "adelle-sans", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #333;
 }
 
 /* NEWS */
@@ -51,22 +31,10 @@ body {
   font-weight: 100;
   margin: 48px auto;
   width: 60rem;
+  display: flex;
+  flex-direction: column;
 }
-/* @media screen and (min-width: 480px) {
-  .blog-container {
-    width: 20rem;
-  }
-}
-@media screen and (min-width: 767px) {
-  .blog-container {
-    width: 20rem;
-  }
-}
-@media screen and (min-width: 959px) {
-  .blog-container {
-    width: 20rem;
-  }
-} */
+
 .blog-container a {
   color: #4d4dff;
   text-decoration: none;
@@ -137,9 +105,6 @@ body {
   text-transform: uppercase;
   position: relative;
   white-space: nowrap;
-  & a {
-    color: lighten(#333, 40%);
-  }
 }
 
 .more {
@@ -150,4 +115,8 @@ body {
   border: 1px solid lighten(#333, 40%);
   border-radius: 3px;
   padding: 0 0.5rem;
+}
+
+.video {
+  margin: auto;
 }
